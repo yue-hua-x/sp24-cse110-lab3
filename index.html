@@ -4,25 +4,30 @@
         <meta charset="UTF-8" />
         <title>duck meeting(with obligatory html)</title>
         <link rel="icon" type="image/x-icon" href="assets/duck.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            body{background-color: rgb(230, 220, 245); color: #28594c}
+            hr{height:2px; background: #28594c; border:0}
+        </style>
     </head>
     <body>
-        <header>
+        <header class="sticky">
+            <img class="duckhat" src="assets/duck.png" alt="duck in hat" width=>
             <h1>Meeting: Ducks.</h1>
-            <hr>
-            <img src="assets/duck.png" alt="duck in hat" width="64">
             <nav>
-                <menu>
-                    <li><a href="#1">facts about ducks</a></li>
-                    <li><a href="#2">what we can do for ducks</a></li>
-                    <li><a href="#3">notes on html</a></li>
-                </menu>
+                <a href="#section-1">pt1</a>
+                <a href="#section-2">pt2</a>
+                <a href="#section-3">pt3</a>
             </nav>
         </header>
         <main>
-            <section id="0">
-                <p>Brief summary of the meeting: things about ducks, and then some things about hrml.</p>
+            <section id="section-0">
+                <p>Brief summary of the meeting: things about ducks, and then some things about html.</p>
             </section>
-            <section id="1">
+            <section id="section-1">
                 <h2>Duck facts:</h2><hr>
                 <ol>
                     <li>ducks can swim</li>
@@ -42,7 +47,7 @@
                     </video>
                 </details>
             </section>
-            <section id="2">
+            <section id="section-2">
                 <h2>the information that we must collect for ducks</h2><hr>
                 <h3>duck fanmail form</h3>
                 <form>
@@ -84,8 +89,9 @@
                     </select><br>
                     <button>duck duck duck</button>
                 </form>
+                <div id="mobile-only">No form for you because you have an Unworthy device (didn't want to bother to figure out forms on mobile for a lab so suffer i guess?)</div>
             </section>
-            <section id="3">
+            <section id="section-3">
                 <h2>HTML facts, but in paragraph form:</h2><hr>
                 <br>
                 <p>((there are no ducks in this section))</p>
