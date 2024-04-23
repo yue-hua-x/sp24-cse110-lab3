@@ -1,3 +1,7 @@
+:root{
+    --hovercolor: color-mix(in lch, red 50%, blue);
+}
+
 *{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -18,7 +22,7 @@ body{
 
 
 header{
-    padding-top: 0.5em;
+    padding-top: 5mm;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -27,6 +31,14 @@ header{
     top:0;
     background-color: #28594c;
     color: rgb(230, 220, 245);
+    text-decoration: underline;
+}
+
+footer{
+    padding: 5mm;
+    background-color: #28594c;
+    color: rgb(230, 220, 245);
+    height: 50vh;
 }
 
 nav{
@@ -36,12 +48,25 @@ nav{
     column-gap: 2px;
     justify-items: center;
     align-items: center;
+    text-align: center;
+}
+
+a{
+    color:aqua;
+}
+
+a:visited{
+    color:#FFF;
 }
 
 section{
     margin: 0;
     margin-bottom: 10pt;
-    padding: 5%
+    padding: 5%;
+    border-style: dotted;
+    border-color: red;
+    border-width: 0.5pt;
+    border-radius: 5vw;
 }
 
 .duckhat{
@@ -50,12 +75,30 @@ section{
     max-width: 64px;
 }
 
+button{
+    background-color: hsla(248,53%,58%,1);
+    color: white;
+    padding: 1vh;
+    border: 0;
+}
+
+button:hover{
+    background-color: var(--hovercolor,#FF0000);
+}
+
+button:active{
+    background-color: #28594c;
+}
+
 .sticky{
     position:sticky;
 }
 
 #section-0, #section-2{
+    margin-left: 25%;
+    margin-right: 25%;
     background-color: #fff;
     padding-top: 1em;
     padding-bottom: 1vh;
+    width: 50%;
 }
